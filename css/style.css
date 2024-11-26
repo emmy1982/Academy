@@ -1,0 +1,273 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    /* Fuente principal para el contenido */
+}
+
+section {
+    padding: 40px 0;
+}
+
+
+/* Para el logo o nombre de la academia */
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.navbar-nav a:hover{
+    color: #0d6efd !important;
+}
+
+/* Hero */
+
+.item-carousel {
+    width: 100% !important;
+    height: 80% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: start !important;
+    flex-direction: column;
+    margin-left: -30px;
+    max-width: 900px;
+}
+
+.carousel-item img {
+    width: 100% !important;
+    height: 80vh !important;
+    object-fit: cover;
+    filter: brightness(0.5);
+
+}
+
+.title-hero {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* ButtonUp */
+
+.buttonUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.buttonUp .btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.buttonUp .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Card-info */
+
+.card-info {
+    width: 100%;
+    height: 250px;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.card-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 81, 255, 0.295);
+}
+
+/* Cursos */
+.img-cursos {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-cursos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transition: all 0.8s ease;
+
+}
+
+.img-cursos img:hover {
+    transform: scale(1.1);
+}
+
+
+.img-cursos h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 6rem;
+    color: #ffffffbd;
+    font-weight: 700;
+    z-index: 5;
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+    transition: opacity 0.3s ease;
+}
+
+/* Modificamos este selector para que funcione cuando se hace hover en .img-cursos */
+.img-cursos:hover h4 {
+    opacity: 0;
+}
+
+.cursos-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 30px 10px;
+    opacity: 0;
+    width: 90%;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+}
+
+.img-cursos:hover .cursos-text {
+    opacity: 1;
+}
+
+/* Online */
+
+.card-online {
+    cursor: pointer;
+}
+
+.card-online img {
+    transition: all 0.3s ease;
+}
+
+.card-online img:hover {
+    transform: scale(1.04);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Profesores */
+
+.profes-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profes-box:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profes-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.txt-profes {
+    width: 100%;
+    height: auto;
+    background-color: rgb(202, 225, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+
+
+.profes-box img:hover {
+    transform: scale(1.1);
+}
+
+.icons-redes{
+    margin-top: -30px;
+    background-color: rgb(202, 225, 253) ;
+    padding: 2px 30px;
+    border-radius: 20px;
+}
+
+.icons-redes i {
+    color: #0d6efd;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.icons-redes i:hover {
+    transform: translateY(-3px);
+    color: #0342a1;
+}
+
+/* Testimonios */
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+    margin: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    padding: 20px;
+}
+
+.carousel {
+    padding: 20px 50px;
+}
+
+.testimonial-card img {
+    width: 100px!important;
+    height: 100px!important;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+
+/* Media Qwerys */
+
+/* En tu archivo style.css */
+.responsive-heading {
+    font-size: 1.25rem !important; /* fs-5 = 1.25rem */
+}
+
+@media (min-width: 768px) {
+    .responsive-heading {
+        font-size: 1rem !important; /* fs-4 = 1.5rem */
+    }
+}
